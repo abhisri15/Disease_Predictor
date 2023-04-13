@@ -15,11 +15,13 @@ def home():
 
 # Define the route for the prediction page
 @app.route("/diseasePredictor", methods=["GET","POST"])
+
 def predict():
     #render_template('Input.html')
     # Get the symptoms from the request form
     # symptoms = request.form.to_dict()
     # Handle the form submission
+    
     if request.method == 'POST':
         # Get the list of selected features
         # selected_features = request.form.getlist('weight_loss')
